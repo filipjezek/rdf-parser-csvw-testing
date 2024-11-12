@@ -10,7 +10,7 @@ export function strToStream(str: string) {
 export function dlToDict(dl: HTMLDListElement) {
   const dict: Record<string, string> = {};
   for (const child of dl.querySelectorAll("dt")) {
-    const key = child.textContent;
+    const key = child.textContent.trim().toLowerCase();
     const value = child.nextElementSibling?.textContent.trim();
     if (value) {
       dict[key] = value;

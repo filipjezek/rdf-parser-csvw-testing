@@ -1,159 +1,148 @@
+import fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import { it, describe, before, after } from "node:test";
+import assert from "node:assert/strict";
+import { basename } from "node:path";
 import rdf from "rdf-ext";
 import Parser from "rdf-parser-csvw";
-import { dlToDict, strToStream } from "./utils.js";
-import { JSDOM } from "jsdom";
-import fs from "node:fs/promises";
-import { basename } from "node:path";
-import { fileURLToPath } from "node:url";
+import { strToStream } from "./utils.js";
 import DatasetExt from "rdf-ext/lib/Dataset.js";
-import { it, describe } from "node:test";
-import { equal, rejects } from "node:assert/strict";
+import { vocabLocalhost, vocabOriginal } from "./prepare-test-data.js";
+import { closeServer, startServer } from "./server.js";
+import { Spec, SpecType } from "./spec.js";
 
-enum SpecType {
-  PASS,
-  WARN,
-  ERROR,
+async function getTestCases(): Promise<Spec[]> {
+  return JSON.parse(
+    await fs.readFile(import.meta.dirname + "/cases.json", "utf-8")
+  );
 }
 
-interface Spec {
-  name: string;
-  json: string;
-  result: string;
-  csv: string[];
-  type: SpecType;
+function removeQueryOrFragment(url: string) {
+  let i = url.indexOf("#");
+  let j = url.indexOf("?");
+  if (i === -1) i = url.length;
+  if (j === -1) j = url.length;
+  return url.slice(0, Math.min(i, j));
 }
 
-function getCSVJSON(info: Record<string, string>): {
-  json: string;
-  csv: string[];
-} {
-  let json: string, csv: string[];
-  if (info["action"]?.endsWith(".csv")) {
-    csv = info["action"].split(/\s+/);
-  } else if (info["action"]?.endsWith(".json")) {
-    json = info["action"];
-  }
-  if (info["implicit"]?.endsWith(".csv")) {
-    csv = info["implicit"].split(/\s+/);
-  } else if (info["implicit"]?.endsWith(".json")) {
-    json = info["implicit"];
-  }
-  return { json: json!, csv: csv! };
+async function loadLD(url: string) {
+  return (rdf as any).io.dataset.fromURL(
+    "file:/" + localURL(url)
+  ) as Promise<DatasetExt>;
 }
 
-async function crawlTests(): Promise<Spec[]> {
-  const doc = await JSDOM.fromURL(
-    "https://w3c.github.io/csvw/tests/reports/index.html"
-  ).then((x) => x.window.document);
-  const names = doc.querySelectorAll("#csvw-rdf-tests-1 > dl > dt");
-  const infos = doc.querySelectorAll("#csvw-rdf-tests-1 > dl > dd");
-
-  return Array.from(names).map((name, i) => {
-    const info = dlToDict(infos[i].querySelector("dl"));
-    const { json, csv } = getCSVJSON(info);
-
-    return {
-      name: name.textContent.trim(),
-      json,
-      result: info["result"],
-      csv,
-      type:
-        info["type"] === "ToRdfTest"
-          ? SpecType.PASS
-          : info["type"] === "ToRdfTestWithWarnings"
-          ? SpecType.WARN
-          : SpecType.ERROR,
-    };
-  });
+async function loadCSV(url: string) {
+  return fs.readFile(localURL(url), "utf-8");
 }
 
-async function prepareFiles(spec: Spec) {
-  const files = [
-    spec.json &&
-      ((rdf as any).io.dataset.fromURL(
-        localURL(spec.json)
-      ) as Promise<DatasetExt>),
-    spec.result &&
-      ((rdf as any).io.dataset.fromURL(
-        localURL(spec.result)
-      ) as Promise<DatasetExt>),
-    spec.csv &&
-      Promise.all(spec.csv.map((x) => fs.readFile(localURL(x), "utf-8"))),
-  ] as const;
-  await Promise.all(files);
-  return {
-    metadata: await files[0],
-    expectedResult: await files[1],
-    csv: await files[2],
-  };
+async function replaceVocab(dataset: DatasetExt): Promise<DatasetExt> {
+  const strOutput = dataset
+    .toString()
+    .replaceAll(vocabOriginal, vocabLocalhost);
+  return (rdf as any).io.dataset.fromText("text/turtle", strOutput);
 }
 
 async function runTest(spec: Spec) {
-  const { metadata, expectedResult, csv } = await prepareFiles(spec);
-  if (csv?.length > 1) throw new Error("Multiple CSV files not supported");
+  let metadata: DatasetExt;
+  const expectedResult = spec.result && (await loadLD(spec.result));
+  let csv: string;
+  let base: string;
+
+  const implicitCSVs = spec.implicit.filter((x) =>
+    new URL(x).pathname.endsWith(".csv")
+  );
+  const implicitJSONs = spec.implicit.filter((x) =>
+    new URL(x).pathname.endsWith(".json")
+  );
+
+  if (new URL(spec.action).pathname.endsWith(".csv")) {
+    csv = await loadCSV(spec.action);
+    base = baseIRI(spec.action);
+    const defaultJSON = spec.action.replace(".csv", "-metadata.json");
+    if (implicitJSONs.length === 1) {
+      metadata = await loadLD(implicitJSONs[0]);
+    } else if (implicitJSONs.includes(defaultJSON)) {
+      metadata = await loadLD(defaultJSON);
+    }
+  } else {
+    if (implicitCSVs.length > 1)
+      throw new Error("Multiple CSV files not supported");
+    metadata = await loadLD(spec.action);
+    if (implicitCSVs.length === 1) {
+      csv = await loadCSV(implicitCSVs[0]);
+      base = baseIRI(implicitCSVs[0]);
+    }
+  }
+
   const parser = new Parser({
     metadata: metadata,
-    baseIRI: baseIRI(spec.csv[0]),
+    baseIRI: base,
   });
 
-  if (spec.type === SpecType.ERROR) {
-    rejects(() => rdf.dataset().import(parser.import(strToStream(csv[0]))));
-  } else {
-    const actual = await rdf
-      .dataset()
-      .import(parser.import(strToStream(csv[0])));
-    equal(actual.toCanonical(), expectedResult.toCanonical());
+  let actual = await replaceVocab(
+    await rdf.dataset().import(parser.import(strToStream(csv)))
+  );
+  if (spec.noProvenance) {
+    // actual = actual.filter((q) => {
+    //   console.log(q);
+    //   return (
+    //     !(
+    //       q.subject.termType === "NamedNode" &&
+    //       q.subject.value.startsWith(vocabLocalhost)
+    //     ) &&
+    //     !(
+    //       q.object.termType === "NamedNode" &&
+    //       q.object.value.startsWith(vocabLocalhost)
+    //     ) &&
+    //     !(
+    //       q.predicate.termType === "NamedNode" &&
+    //       q.predicate.value.startsWith(vocabLocalhost)
+    //     )
+    //   );
+    // });
+  }
+  if (spec.type !== SpecType.ERROR) {
+    assert.equal(actual.toCanonical(), expectedResult.toCanonical());
   }
 }
 
-async function download(url: string) {
-  fetch(url)
-    .then((x) => x.text())
-    .then((x) =>
-      fs.writeFile(localURL(url), x, {
-        flag: "w",
-      })
-    );
-}
-
-async function downloadAll(specs: Spec[]) {
-  await Promise.all(
-    specs.slice(0, 1).map(async (s) => {
-      let tasks: Promise<void>[] = [];
-      if (s.json) {
-        tasks.push(download(s.json));
-      }
-      if (s.result) {
-        tasks.push(download(s.result));
-      }
-      if (s.csv?.length) {
-        tasks.push(...s.csv.map(download));
-      }
-      return Promise.all(tasks);
-    })
-  );
-}
-
 function localURL(url: string) {
-  return fileURLToPath(import.meta.resolve("../test-data/" + basename(url)));
+  return fileURLToPath(
+    import.meta.resolve(
+      "../test-data/" +
+        removeQueryOrFragment(
+          url.slice("http://www.w3.org/2013/csvw/tests/".length)
+        )
+    )
+  );
 }
 function baseIRI(url: string) {
-  return url.replace(
-    "http://www.w3.org/2013/csvw/tests/",
-    "https://w3c.github.io/csvw/tests/"
-  );
+  return basename(url);
 }
 
 async function main() {
-  const specs = await crawlTests();
-  await downloadAll(specs);
+  const specs = (await getTestCases()).slice(0);
 
   describe("CSVW tests", () => {
+    before(() => {
+      console.log("Starting CSVW tests");
+      startServer();
+    });
+
     for (const spec of specs) {
       it(spec.name, async () => {
-        await runTest(spec);
+        if (spec.type === SpecType.ERROR) {
+          await assert.rejects(() => runTest(spec));
+        } else {
+          await runTest(spec);
+        }
       });
     }
+
+    after(() => {
+      console.log("CSVW tests completed");
+      closeServer();
+    });
   });
 }
 

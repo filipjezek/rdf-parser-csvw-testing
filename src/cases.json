@@ -1,0 +1,2662 @@
+[
+  {
+    "name": "Test 001: Simple table",
+    "action": "http://www.w3.org/2013/csvw/tests/test001.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test001.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 005: Identifier references",
+    "action": "http://www.w3.org/2013/csvw/tests/test005.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test005.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 006: No identifiers",
+    "action": "http://www.w3.org/2013/csvw/tests/test006.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test006.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 007: Joined table with unique identifiers",
+    "action": "http://www.w3.org/2013/csvw/tests/test007.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test007.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 008: Microsyntax - internal field separator",
+    "action": "http://www.w3.org/2013/csvw/tests/test008.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test008.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 009: Microsyntax - formatted time",
+    "action": "http://www.w3.org/2013/csvw/tests/test009.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test009.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 010: Country-codes-and-names example",
+    "action": "http://www.w3.org/2013/csvw/tests/test010.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test010.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 011: tree-ops example with metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test011/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test011/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test011/tree-ops.csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 012: tree-ops example with directory metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test012/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test012/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test012/csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 013: tree-ops example from user metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test013.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test013-user-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 014: tree-ops example with linked metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test014/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test014/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test014/linked-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 015: tree-ops example with user and directory metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test015/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test015/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test015/user-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test015/csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 016: tree-ops example with linked and directory metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test016/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test016/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test016/csv-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test016/linked-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 017: tree-ops example with file and directory metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test017/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test017/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test017/tree-ops.csv-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test017/csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 018: tree-ops example with user, file and directory metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test018/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test018/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test018/user-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test018/tree-ops.csv-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test018/csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 023: dialect: header=false",
+    "action": "http://www.w3.org/2013/csvw/tests/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test023.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test023-user-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 027: tree-ops minimal output",
+    "action": "http://www.w3.org/2013/csvw/tests/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test027.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test027-user-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 028: countries.csv example",
+    "action": "http://www.w3.org/2013/csvw/tests/countries.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test028.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 029: countries.csv minimal",
+    "action": "http://www.w3.org/2013/csvw/tests/countries.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test029.ttl",
+    "implicit": [],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 030: countries.json example",
+    "action": "http://www.w3.org/2013/csvw/tests/countries.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test030.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 031: countries.json example minimal output",
+    "action": "http://www.w3.org/2013/csvw/tests/countries.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test031.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 032: events-listing.csv example",
+    "action": "http://www.w3.org/2013/csvw/tests/test032/csv-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test032/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test032/events-listing.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 033: events-listing.csv minimal output",
+    "action": "http://www.w3.org/2013/csvw/tests/test033/csv-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test033/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test033/events-listing.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 034: roles example",
+    "action": "http://www.w3.org/2013/csvw/tests/test034/csv-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test034/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test034/senior-roles.csv",
+      "http://www.w3.org/2013/csvw/tests/test034/junior-roles.csv",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/data/organizations.csv",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/data/professions.csv",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/schema/junior-roles.json",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/schema/senior-roles.json",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/schema/organizations.json",
+      "http://www.w3.org/2013/csvw/tests/test034/gov.uk/schema/professions.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 035: roles minimal",
+    "action": "http://www.w3.org/2013/csvw/tests/test035/csv-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test035/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test035/senior-roles.csv",
+      "http://www.w3.org/2013/csvw/tests/test035/junior-roles.csv",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/data/organizations.csv",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/data/professions.csv",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/schema/junior-roles.json",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/schema/senior-roles.json",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/schema/organizations.json",
+      "http://www.w3.org/2013/csvw/tests/test035/gov.uk/schema/professions.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 036: tree-ops-ext example",
+    "action": "http://www.w3.org/2013/csvw/tests/test036/tree-ops-ext.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test036/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test036/tree-ops-ext.csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 037: tree-ops-ext minimal",
+    "action": "http://www.w3.org/2013/csvw/tests/test037/tree-ops-ext.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test037/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test037/tree-ops-ext.csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 038: inherited properties propagation",
+    "action": "http://www.w3.org/2013/csvw/tests/test038-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test038.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test038.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 039: valid inherited properties",
+    "action": "http://www.w3.org/2013/csvw/tests/test039-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test039.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test039.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 040: invalid null",
+    "action": "http://www.w3.org/2013/csvw/tests/test040-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test040.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test040.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 041: invalid lang",
+    "action": "http://www.w3.org/2013/csvw/tests/test041-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test041.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test041.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 042: invalid textDirection",
+    "action": "http://www.w3.org/2013/csvw/tests/test042-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test042.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test042.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 043: invalid separator",
+    "action": "http://www.w3.org/2013/csvw/tests/test043-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test043.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test043.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 044: invalid ordered",
+    "action": "http://www.w3.org/2013/csvw/tests/test044-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test044.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test044.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 045: invalid default",
+    "action": "http://www.w3.org/2013/csvw/tests/test045-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test045.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test045.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 046: invalid dataype",
+    "action": "http://www.w3.org/2013/csvw/tests/test046-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test046.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test046.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 047: invalid aboutUrl",
+    "action": "http://www.w3.org/2013/csvw/tests/test047-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test047.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test047.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 048: invalid propertyUrl",
+    "action": "http://www.w3.org/2013/csvw/tests/test048-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test048.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test048.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 049: invalid valueUrl",
+    "action": "http://www.w3.org/2013/csvw/tests/test049-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test049.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test049.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 059: dialect: invalid commentPrefix",
+    "action": "http://www.w3.org/2013/csvw/tests/test059-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test059.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 060: dialect: invalid delimiter",
+    "action": "http://www.w3.org/2013/csvw/tests/test060-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test060.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 061: dialect: invalid doubleQuote",
+    "action": "http://www.w3.org/2013/csvw/tests/test061-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test061.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 062: dialect: invalid encoding",
+    "action": "http://www.w3.org/2013/csvw/tests/test062-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test062.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 063: dialect: invalid header",
+    "action": "http://www.w3.org/2013/csvw/tests/test063-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test063.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 065: dialect: invalid headerRowCount",
+    "action": "http://www.w3.org/2013/csvw/tests/test065-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test065.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 066: dialect: invalid lineTerminators",
+    "action": "http://www.w3.org/2013/csvw/tests/test066-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test066.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 067: dialect: invalid quoteChar",
+    "action": "http://www.w3.org/2013/csvw/tests/test067-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test067.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 068: dialect: invalid skipBlankRows",
+    "action": "http://www.w3.org/2013/csvw/tests/test068-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test068.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 069: dialect: invalid skipColumns",
+    "action": "http://www.w3.org/2013/csvw/tests/test069-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test069.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 070: dialect: invalid skipInitialSpace",
+    "action": "http://www.w3.org/2013/csvw/tests/test070-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test070.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 071: dialect: invalid skipRows",
+    "action": "http://www.w3.org/2013/csvw/tests/test071-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test071.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 072: dialect: invalid trim",
+    "action": "http://www.w3.org/2013/csvw/tests/test072-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test072.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 073: invalid @language",
+    "action": "http://www.w3.org/2013/csvw/tests/test073-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test073.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 074: empty tables",
+    "action": "http://www.w3.org/2013/csvw/tests/test074-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 075: invalid tableGroup tableDirection",
+    "action": "http://www.w3.org/2013/csvw/tests/test075-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test075.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 076: invalid table tableDirection",
+    "action": "http://www.w3.org/2013/csvw/tests/test076-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test076.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 077: invalid tableGroup @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test077-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 078: invalid table @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test078-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 079: invalid schema @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test079-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 080: invalid column @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test080-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 081: invalid dialect @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test081-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 082: invalid template @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test082-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 083: invalid tableGroup @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test083-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 084: invalid table @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test084-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 085: invalid schema @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test085-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 086: invalid column @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test086-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 087: invalid dialect @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test087-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 088: invalid transformation @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test088-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 089: missing tables in TableGroup",
+    "action": "http://www.w3.org/2013/csvw/tests/test089-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 090: missing url in Table",
+    "action": "http://www.w3.org/2013/csvw/tests/test090-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 093: undefined properties",
+    "action": "http://www.w3.org/2013/csvw/tests/test093-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test093.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 095: inconsistent array values: transformations",
+    "action": "http://www.w3.org/2013/csvw/tests/test095-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test095.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 097: inconsistent array values: foreignKeys",
+    "action": "http://www.w3.org/2013/csvw/tests/test097-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test097.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 098: inconsistent array values: tables",
+    "action": "http://www.w3.org/2013/csvw/tests/test098-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 099: inconsistent array values: transformations",
+    "action": "http://www.w3.org/2013/csvw/tests/test099-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test099.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 100: inconsistent array values: columns",
+    "action": "http://www.w3.org/2013/csvw/tests/test100-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test100.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 101: inconsistent array values: foreignKeys",
+    "action": "http://www.w3.org/2013/csvw/tests/test101-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test101.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 102: inconsistent link values: @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test102-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test102.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 103: inconsistent link values: url",
+    "action": "http://www.w3.org/2013/csvw/tests/test103-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 104: invalid columnReference",
+    "action": "http://www.w3.org/2013/csvw/tests/test104-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 105: invalid primaryKey",
+    "action": "http://www.w3.org/2013/csvw/tests/test105-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test105.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 106: invalid dialect",
+    "action": "http://www.w3.org/2013/csvw/tests/test106-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test106.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 107: invalid tableSchema",
+    "action": "http://www.w3.org/2013/csvw/tests/test107-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test107.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 108: invalid reference",
+    "action": "http://www.w3.org/2013/csvw/tests/test108-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 109: titles with invalid language",
+    "action": "http://www.w3.org/2013/csvw/tests/test109-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test109.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 110: titles with non-string values",
+    "action": "http://www.w3.org/2013/csvw/tests/test110-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test110.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 111: titles with invalid value",
+    "action": "http://www.w3.org/2013/csvw/tests/test111-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test111.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 112: titles with non-string array values",
+    "action": "http://www.w3.org/2013/csvw/tests/test112-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test112.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 113: invalid suppressOutput",
+    "action": "http://www.w3.org/2013/csvw/tests/test113-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test113.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 114: invalid name",
+    "action": "http://www.w3.org/2013/csvw/tests/test114-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test114.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 115: invalid virtual",
+    "action": "http://www.w3.org/2013/csvw/tests/test115-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test115.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 116: file-metadata with query component not found",
+    "action": "http://www.w3.org/2013/csvw/tests/test116.csv?query",
+    "result": "http://www.w3.org/2013/csvw/tests/test116.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test116.csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 117: file-metadata not referencing file",
+    "action": "http://www.w3.org/2013/csvw/tests/test117.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test117.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test117.csv-metadata.json"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 118: directory-metadata with query component",
+    "action": "http://www.w3.org/2013/csvw/tests/test118/action.csv?query",
+    "result": "http://www.w3.org/2013/csvw/tests/test118/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test118/csv-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 119: directory-metadata not referencing file",
+    "action": "http://www.w3.org/2013/csvw/tests/test119/action.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test119/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test119/csv-metadata.json"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 120: link-metadata not referencing file",
+    "action": "http://www.w3.org/2013/csvw/tests/test120.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test120.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test120-linked-metadata.json"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 121: user-metadata not referencing file",
+    "action": "http://www.w3.org/2013/csvw/tests/test121.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test121.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test121-user-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test121-ref.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 122: link-metadata not describing file uses file-metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test122.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test122.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test122.csv-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test122-linked-metadata.json"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 123: file-metadata not describing file uses directory-metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test123/action.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test123/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test123/action.csv-metadata.json",
+      "http://www.w3.org/2013/csvw/tests/test123/csv-metadata.json"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 124: metadata with columns not matching csv titles",
+    "action": "http://www.w3.org/2013/csvw/tests/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test124.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test124-user-metadata.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 125: required column with empty cell",
+    "action": "http://www.w3.org/2013/csvw/tests/test125-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test125.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test125.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 126: required column with cell matching null",
+    "action": "http://www.w3.org/2013/csvw/tests/test126-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test126.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test126.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 127: incompatible table",
+    "action": "http://www.w3.org/2013/csvw/tests/test127-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test127.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test127.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 128: duplicate column names",
+    "action": "http://www.w3.org/2013/csvw/tests/test128-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 129: columnn name as integer",
+    "action": "http://www.w3.org/2013/csvw/tests/test129-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test129.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 130: invalid column name",
+    "action": "http://www.w3.org/2013/csvw/tests/test130-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test130.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 131: invalid column name",
+    "action": "http://www.w3.org/2013/csvw/tests/test131-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test131.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 132: name annotation from title percent encoded",
+    "action": "http://www.w3.org/2013/csvw/tests/test132-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test132.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 133: virtual before non-virtual",
+    "action": "http://www.w3.org/2013/csvw/tests/test133-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 134: context in common property",
+    "action": "http://www.w3.org/2013/csvw/tests/test134-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 135: @list value",
+    "action": "http://www.w3.org/2013/csvw/tests/test135-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 136: @set value",
+    "action": "http://www.w3.org/2013/csvw/tests/test136-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 137: @type out of range (as datatype)",
+    "action": "http://www.w3.org/2013/csvw/tests/test137-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 138: @type out of range (as node type)",
+    "action": "http://www.w3.org/2013/csvw/tests/test138-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 139: @type out of range (as node type) - string",
+    "action": "http://www.w3.org/2013/csvw/tests/test139-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 140: @type out of range (as node type) - integer",
+    "action": "http://www.w3.org/2013/csvw/tests/test140-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 141: @id out of range (as node type) - bnode",
+    "action": "http://www.w3.org/2013/csvw/tests/test141-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 142: @value with @language and @type",
+    "action": "http://www.w3.org/2013/csvw/tests/test142-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 143: @value with extra properties",
+    "action": "http://www.w3.org/2013/csvw/tests/test143-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 144: @language outside of @value",
+    "action": "http://www.w3.org/2013/csvw/tests/test144-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 146: Invalid faux-keyword",
+    "action": "http://www.w3.org/2013/csvw/tests/test146-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 147: title incompatible with title on case",
+    "action": "http://www.w3.org/2013/csvw/tests/test147-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test147.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 148: title incompatible with title on language",
+    "action": "http://www.w3.org/2013/csvw/tests/test148-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test148.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 149: title compatible with title on less specific language",
+    "action": "http://www.w3.org/2013/csvw/tests/test149-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test149.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 150: non-builtin datatype (datatype value)",
+    "action": "http://www.w3.org/2013/csvw/tests/test150-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test150.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 151: non-builtin datatype (base value)",
+    "action": "http://www.w3.org/2013/csvw/tests/test151-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test151.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 152: string format (valid combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test152-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test152.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test152.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 153: string format (bad format string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test153-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test153.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test153.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 154: string format (value not matching format)",
+    "action": "http://www.w3.org/2013/csvw/tests/test154-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test154.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test154.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 155: number format (valid combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test155-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test155.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test155.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 156: number format (bad format string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test156-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test156.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test156.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 157: number format (value not matching format)",
+    "action": "http://www.w3.org/2013/csvw/tests/test157-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test157.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test157.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 158: number format (valid combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test158-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test158.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test158.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 159: number format (bad pattern format string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test159-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test159.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test159.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 160: number format (not matching values with pattern)",
+    "action": "http://www.w3.org/2013/csvw/tests/test160-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test160.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test160.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 161: number format (not matching values without pattern)",
+    "action": "http://www.w3.org/2013/csvw/tests/test161-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test161.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test161.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 162: numeric format (consecutive groupChar)",
+    "action": "http://www.w3.org/2013/csvw/tests/test162-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test162.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test162.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 163: integer datatype with decimalChar",
+    "action": "http://www.w3.org/2013/csvw/tests/test163-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test163.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test163.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 164: decimal datatype with exponent",
+    "action": "http://www.w3.org/2013/csvw/tests/test164-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test164.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test164.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 165: decimal type with NaN",
+    "action": "http://www.w3.org/2013/csvw/tests/test165-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test165.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test165.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 166: decimal type with INF",
+    "action": "http://www.w3.org/2013/csvw/tests/test166-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test166.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test166.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 167: decimal type with -INF",
+    "action": "http://www.w3.org/2013/csvw/tests/test167-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test167.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test167.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 168: decimal with implicit groupChar",
+    "action": "http://www.w3.org/2013/csvw/tests/test168-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test168.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test168.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 169: invalid decimal",
+    "action": "http://www.w3.org/2013/csvw/tests/test169-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test169.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test169.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 170: decimal with percent",
+    "action": "http://www.w3.org/2013/csvw/tests/test170-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test170.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test170.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 171: decimal with per-mille",
+    "action": "http://www.w3.org/2013/csvw/tests/test171-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test171.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test171.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 172: invalid byte",
+    "action": "http://www.w3.org/2013/csvw/tests/test172-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test172.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test172.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 173: invald unsignedLong",
+    "action": "http://www.w3.org/2013/csvw/tests/test173-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test173.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test173.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 174: invalid unsignedShort",
+    "action": "http://www.w3.org/2013/csvw/tests/test174-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test174.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test174.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 175: invalid unsignedByte",
+    "action": "http://www.w3.org/2013/csvw/tests/test175-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test175.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test175.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 176: invalid positiveInteger",
+    "action": "http://www.w3.org/2013/csvw/tests/test176-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test176.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test176.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 177: invalid negativeInteger",
+    "action": "http://www.w3.org/2013/csvw/tests/test177-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test177.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test177.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 178: invalid nonPositiveInteger",
+    "action": "http://www.w3.org/2013/csvw/tests/test178-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test178.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test178.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 179: invalid nonNegativeInteger",
+    "action": "http://www.w3.org/2013/csvw/tests/test179-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test179.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test179.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 180: invalid double",
+    "action": "http://www.w3.org/2013/csvw/tests/test180-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test180.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test180.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 181: invalid number",
+    "action": "http://www.w3.org/2013/csvw/tests/test181-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test181.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test181.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 182: invalid float",
+    "action": "http://www.w3.org/2013/csvw/tests/test182-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test182.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test182.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 183: boolean format (valid combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test183-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test183.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test183.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 184: boolean format (bad format string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test184-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test184.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test184.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 185: boolean format (value not matching format)",
+    "action": "http://www.w3.org/2013/csvw/tests/test185-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test185.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test185.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 186: boolean format (not matching datatype)",
+    "action": "http://www.w3.org/2013/csvw/tests/test186-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test186.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test186.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 187: date format (valid native combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test187-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test187.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test187.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 188: date format (valid date combinations with formats)",
+    "action": "http://www.w3.org/2013/csvw/tests/test188-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test188.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test188.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 189: date format (valid time combinations with formats)",
+    "action": "http://www.w3.org/2013/csvw/tests/test189-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test189.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test189.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 190: date format (valid dateTime combinations with formats)",
+    "action": "http://www.w3.org/2013/csvw/tests/test190-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test190.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test190.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 191: date format (bad format string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test191-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test191.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test191.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 192: date format (value not matching format)",
+    "action": "http://www.w3.org/2013/csvw/tests/test192-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test192.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test192.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 193: duration format (valid combinations)",
+    "action": "http://www.w3.org/2013/csvw/tests/test193-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test193.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test193.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 194: duration format (value not matching format)",
+    "action": "http://www.w3.org/2013/csvw/tests/test194-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test194.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test194.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 195: values with matching length",
+    "action": "http://www.w3.org/2013/csvw/tests/test195-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test195.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test195.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 196: values with wrong length",
+    "action": "http://www.w3.org/2013/csvw/tests/test196-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test196.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test196.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 197: values with wrong maxLength",
+    "action": "http://www.w3.org/2013/csvw/tests/test197-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test197.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test197.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 198: values with wrong minLength",
+    "action": "http://www.w3.org/2013/csvw/tests/test198-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test198.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test198.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 199: length < minLength",
+    "action": "http://www.w3.org/2013/csvw/tests/test199-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test199.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 200: length > maxLength",
+    "action": "http://www.w3.org/2013/csvw/tests/test200-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test200.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 201: length on date",
+    "action": "http://www.w3.org/2013/csvw/tests/test201-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test201.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 202: float matching constraints",
+    "action": "http://www.w3.org/2013/csvw/tests/test202-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test202.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test202.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 203: float value constraint not matching minimum",
+    "action": "http://www.w3.org/2013/csvw/tests/test203-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test203.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test203.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 204: float value constraint not matching maximum",
+    "action": "http://www.w3.org/2013/csvw/tests/test204-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test204.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test204.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 205: float value constraint not matching minInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test205-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test205.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test205.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 206: float value constraint not matching minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test206-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test206.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test206.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 207: float value constraint not matching maxInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test207-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test207.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test207.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 208: float value constraint not matching maxExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test208-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test208.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test208.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 209: date matching constraints",
+    "action": "http://www.w3.org/2013/csvw/tests/test209-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test209.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test209.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 210: date value constraint not matching minimum",
+    "action": "http://www.w3.org/2013/csvw/tests/test210-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test210.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test210.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 211: date value constraint not matching maximum",
+    "action": "http://www.w3.org/2013/csvw/tests/test211-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test211.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test211.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 212: date value constraint not matching minInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test212-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test212.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test212.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 213: date value constraint not matching minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test213-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test213.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test213.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 214: date value constraint not matching maxInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test214-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test214.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test214.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 215: date value constraint not matching maxExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test215-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test215.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test215.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 216: minInclusive and minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test216-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test216.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 217: maxInclusive and maxExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test217-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test217.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 218: maxInclusive < minInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test218-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test218.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 219: maxExclusive = minInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test219-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test219.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 220: maxExclusive < minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test220-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test220.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 221: maxInclusive = minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test221-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test221.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 222: string datatype with minimum",
+    "action": "http://www.w3.org/2013/csvw/tests/test222-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test222.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 223: string datatype with maxium",
+    "action": "http://www.w3.org/2013/csvw/tests/test223-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test223.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 224: string datatype with minInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test224-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test224.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 225: string datatype with maxInclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test225-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test225.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 226: string datatype with minExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test226-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test226.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 227: string datatype with maxExclusive",
+    "action": "http://www.w3.org/2013/csvw/tests/test227-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test227.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 228: length with separator",
+    "action": "http://www.w3.org/2013/csvw/tests/test228-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test228.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test228.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 229: matching minLength with separator",
+    "action": "http://www.w3.org/2013/csvw/tests/test229-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test229.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test229.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 230: failing minLength with separator",
+    "action": "http://www.w3.org/2013/csvw/tests/test230-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test230.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test230.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 231: single column primaryKey success",
+    "action": "http://www.w3.org/2013/csvw/tests/test231-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test231.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test231.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 232: single column primaryKey violation",
+    "action": "http://www.w3.org/2013/csvw/tests/test232-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test232.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test232.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 233: multiple column primaryKey success",
+    "action": "http://www.w3.org/2013/csvw/tests/test233-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test233.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test233.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 234: multiple column primaryKey violation",
+    "action": "http://www.w3.org/2013/csvw/tests/test234-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test234.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test234.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 235: rowTitles on one column",
+    "action": "http://www.w3.org/2013/csvw/tests/test235-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test235.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 236: rowTitles on multiple columns",
+    "action": "http://www.w3.org/2013/csvw/tests/test236-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test236.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 237: rowTitles on one column (minimal)",
+    "action": "http://www.w3.org/2013/csvw/tests/test237-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test237.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 238: datatype value an absolute URL",
+    "action": "http://www.w3.org/2013/csvw/tests/test238-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test238.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test238.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 242: datatype @id an absolute URL",
+    "action": "http://www.w3.org/2013/csvw/tests/test242-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test242.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test242.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 243: invalid datatype @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test243-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test243.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 244: invalid datatype @id",
+    "action": "http://www.w3.org/2013/csvw/tests/test244-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test244.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 245: date format (valid time combinations with formats and milliseconds)",
+    "action": "http://www.w3.org/2013/csvw/tests/test245-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test245.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test245.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 246: date format (valid dateTime combinations with formats and milliseconds)",
+    "action": "http://www.w3.org/2013/csvw/tests/test246-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test246.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test246.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 247: date format (extra milliseconds)",
+    "action": "http://www.w3.org/2013/csvw/tests/test247-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test247.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test247.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 248: Unicode in non-Normalized form",
+    "action": "http://www.w3.org/2013/csvw/tests/test248-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test248.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test248.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 251: missing source reference",
+    "action": "http://www.w3.org/2013/csvw/tests/test251-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 252: missing destination reference column",
+    "action": "http://www.w3.org/2013/csvw/tests/test252-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 253: missing destination table",
+    "action": "http://www.w3.org/2013/csvw/tests/test253-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/country_slice.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 259: tree-ops example with csvm.json (w3.org/.well-known/csvm)",
+    "action": "http://www.w3.org/2013/csvw/tests/test259/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test259/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test259/csvm.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 260: tree-ops example with {+url}.json (w3.org/.well-known/csvm)",
+    "action": "http://www.w3.org/2013/csvw/tests/test260/tree-ops.csv",
+    "result": "http://www.w3.org/2013/csvw/tests/test260/result.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test260/tree-ops.csv.json"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 261: maxLength < minLength",
+    "action": "http://www.w3.org/2013/csvw/tests/test261-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test261.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 263: @type on a common property can be a built-in type",
+    "action": "http://www.w3.org/2013/csvw/tests/test263-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test263.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 264: @type on a common property can be a CURIE if the prefix is one of the built-in ones",
+    "action": "http://www.w3.org/2013/csvw/tests/test264-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test264.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 266: `null` contains an array of (valid) string & (invalid) numeric values",
+    "action": "http://www.w3.org/2013/csvw/tests/test266-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test266.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 267: @id on datatype is invalid (eg starts with _:)",
+    "action": "http://www.w3.org/2013/csvw/tests/test267-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 268: `base` missing on datatype (defaults to string)",
+    "action": "http://www.w3.org/2013/csvw/tests/test268-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test268.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 269: `format` for a boolean datatype is a string but in the wrong form (eg YN)",
+    "action": "http://www.w3.org/2013/csvw/tests/test269-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test269.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test269.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 270: transformation includes an invalid property (eg foo)",
+    "action": "http://www.w3.org/2013/csvw/tests/test270-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test270.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 271: foreign key includes an invalid property (eg `dc:description`)",
+    "action": "http://www.w3.org/2013/csvw/tests/test271-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/test271.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 272: foreign key reference includes an invalid property (eg `dc:description`)",
+    "action": "http://www.w3.org/2013/csvw/tests/test272-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/countries.csv",
+      "http://www.w3.org/2013/csvw/tests/test272.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 273: `@base` set in `@context` overriding eg CSV location",
+    "action": "http://www.w3.org/2013/csvw/tests/test273-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test273.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test273/action.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 274: `@context` object includes properties other than `@base` and `@language`",
+    "action": "http://www.w3.org/2013/csvw/tests/test274-metadata.json",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 2,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 275: property acceptable on column appears on table group",
+    "action": "http://www.w3.org/2013/csvw/tests/test275-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test275.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 276: property acceptable on column appears on table",
+    "action": "http://www.w3.org/2013/csvw/tests/test276-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test276.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 277: property acceptable on table appears on column",
+    "action": "http://www.w3.org/2013/csvw/tests/test277-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test277.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 278: CSV has more headers than there are columns in the metadata",
+    "action": "http://www.w3.org/2013/csvw/tests/test278-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test278.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/tree-ops.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 279: duration not matching xsd pattern",
+    "action": "http://www.w3.org/2013/csvw/tests/test279-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test279.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test279.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 280: dayTimeDuration not matching xsd pattern",
+    "action": "http://www.w3.org/2013/csvw/tests/test280-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test280.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test280.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 281: yearMonthDuration not matching xsd pattern",
+    "action": "http://www.w3.org/2013/csvw/tests/test281-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test281.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test281.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 282: valid number patterns",
+    "action": "http://www.w3.org/2013/csvw/tests/test282-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test282.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test282.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 283: valid number patterns (signs and percent/permille)",
+    "action": "http://www.w3.org/2013/csvw/tests/test283-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test283.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test283.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 284: valid number patterns (grouping)",
+    "action": "http://www.w3.org/2013/csvw/tests/test284-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test284.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test284.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 285: valid number patterns (fractional grouping)",
+    "action": "http://www.w3.org/2013/csvw/tests/test285-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test285.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test285.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 286: invalid ##0 1,234",
+    "action": "http://www.w3.org/2013/csvw/tests/test286-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test286.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test286.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 287: invalid ##0 123.4",
+    "action": "http://www.w3.org/2013/csvw/tests/test287-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test287.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test287.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 288: invalid #,#00 1",
+    "action": "http://www.w3.org/2013/csvw/tests/test288-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test288.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test288.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 289: invalid #,#00 1234",
+    "action": "http://www.w3.org/2013/csvw/tests/test289-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test289.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test289.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 290: invalid #,#00 12,34",
+    "action": "http://www.w3.org/2013/csvw/tests/test290-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test290.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test290.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 291: invalid #,#00 12,34,567",
+    "action": "http://www.w3.org/2013/csvw/tests/test291-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test291.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test291.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 292: invalid #,##,#00 1",
+    "action": "http://www.w3.org/2013/csvw/tests/test292-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test292.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test292.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 293: invalid #,##,#00 1234",
+    "action": "http://www.w3.org/2013/csvw/tests/test293-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test293.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test293.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 294: invalid #,##,#00 12,34",
+    "action": "http://www.w3.org/2013/csvw/tests/test294-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test294.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test294.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 295: invalid #,##,#00 1,234,567",
+    "action": "http://www.w3.org/2013/csvw/tests/test295-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test295.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test295.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 296: invalid #0.# 12.34",
+    "action": "http://www.w3.org/2013/csvw/tests/test296-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test296.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test296.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 297: invalid #0.# 1,234.5",
+    "action": "http://www.w3.org/2013/csvw/tests/test297-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test297.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test297.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 298: invalid #0.0 1",
+    "action": "http://www.w3.org/2013/csvw/tests/test298-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test298.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test298.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 299: invalid #0.0 12.34",
+    "action": "http://www.w3.org/2013/csvw/tests/test299-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test299.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test299.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 300: invalid #0.0# 1",
+    "action": "http://www.w3.org/2013/csvw/tests/test300-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test300.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test300.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 301: invalid #0.0# 12.345",
+    "action": "http://www.w3.org/2013/csvw/tests/test301-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test301.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test301.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 302: invalid #0.0#,# 1",
+    "action": "http://www.w3.org/2013/csvw/tests/test302-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test302.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test302.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 303: invalid #0.0#,# 12.345",
+    "action": "http://www.w3.org/2013/csvw/tests/test303-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test303.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test303.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 304: invalid #0.0#,# 12.34,567",
+    "action": "http://www.w3.org/2013/csvw/tests/test304-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test304.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test304.csv"
+    ],
+    "type": 1,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 305: multiple values with same subject and property (unordered)",
+    "action": "http://www.w3.org/2013/csvw/tests/test305-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test305.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test305.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 306: multiple values with same subject and property (ordered)",
+    "action": "http://www.w3.org/2013/csvw/tests/test306-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test306.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test306.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  },
+  {
+    "name": "Test 307: multiple values with same subject and property (ordered and unordered)",
+    "action": "http://www.w3.org/2013/csvw/tests/test307-metadata.json",
+    "result": "http://www.w3.org/2013/csvw/tests/test307.ttl",
+    "implicit": [
+      "http://www.w3.org/2013/csvw/tests/test307.csv"
+    ],
+    "type": 0,
+    "noProvenance": true
+  }
+]
