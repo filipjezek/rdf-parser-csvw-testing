@@ -1,13 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { vocabLocalhost, vocabOriginal, vocabPhysical } from "./vocab.js";
 
 const testDir = import.meta.dirname.replaceAll("\\", "/") + "/../test-data";
 const testSrcDir = import.meta.dirname.replaceAll("\\", "/") + "/../csvw/tests";
-export const vocabPhysical =
-  import.meta.dirname.replaceAll("\\", "/") + "/../test-data/csvw.jsonld";
-export const vocabOriginal = "http://www.w3.org/ns/csvw";
-export const vocabLocalhost = "http://localhost:8080/csvw.jsonld";
 const vocabSrc = import.meta.dirname.replaceAll("\\", "/") + "/csvw.jsonld";
 
 async function copyAndReplace(src: string, dest: string) {

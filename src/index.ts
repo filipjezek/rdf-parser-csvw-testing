@@ -7,7 +7,7 @@ import rdf from "rdf-ext";
 import Parser from "rdf-parser-csvw";
 import { strToStream } from "./utils.js";
 import DatasetExt from "rdf-ext/lib/Dataset.js";
-import { vocabLocalhost, vocabOriginal } from "./prepare-test-data.js";
+import { vocabLocalhost, vocabOriginal } from "./vocab.js";
 import { closeServer, startServer } from "./server.js";
 import { Spec, SpecType } from "./spec.js";
 
