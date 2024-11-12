@@ -1,0 +1,23 @@
+{
+  "name": "team-project",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --import tsx src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsdom": "^25.0.1",
+    "rdf-ext": "^2.5.1",
+    "rdf-parser-csvw": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/rdf-ext": "^2.5.0",
+    "@types/rdf-parser-csvw": "^0.15.0",
+    "tsx": "^4.19.2"
+  }
+}
